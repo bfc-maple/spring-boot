@@ -1,0 +1,22 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: spring-boot-base
+  mvc:
+    pathmatch:
+      matching-strategy: ANT_PATH_MATCHER
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/dev?characterEncoding=utf8
+    username: root
+    password: 123456
+swagger:
+  enable: true
+  application-name: ${spring.application.name}
+  application-version: 1.0
+  application-description: Spring-boot-swagger3.0
+  try-host: http://localhost:${server.port}/${spring.application.name}
+  index: http://localhost:${server.port}/swagger-ui/index.html
+  doc: http://localhost:${server.port}/swagger-ui/index.html
+

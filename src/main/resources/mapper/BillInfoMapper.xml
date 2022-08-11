@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.bfc.boot.code.bill.mapper.BillInfoMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.bfc.boot.code.bill.entity.BillInfo">
+        <id column="id" property="id" />
+        <result column="trade_code" property="tradeCode" />
+        <result column="merchant_code" property="merchantCode" />
+        <result column="name" property="name" />
+        <result column="account" property="account" />
+        <result column="trade_type" property="tradeType" />
+        <result column="trade_man" property="tradeMan" />
+        <result column="trade_account" property="tradeAccount" />
+        <result column="trade_goods" property="tradeGoods" />
+        <result column="in_or_out" property="inOrOut" />
+        <result column="amount" property="amount" />
+        <result column="pay_way" property="payWay" />
+        <result column="trade_platform" property="tradePlatform" />
+        <result column="trade_status" property="tradeStatus" />
+        <result column="trade_time" property="tradeTime" />
+        <result column="remark" property="remark" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, trade_code, merchant_code, name, account, trade_type, trade_man, trade_account, trade_goods, in_or_out, amount, pay_way, trade_platform, trade_status, trade_time, remark
+    </sql>
+
+</mapper>
